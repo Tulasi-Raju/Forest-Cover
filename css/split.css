@@ -13,14 +13,14 @@
   .left {
     left: 0;
     width: 50%;
-    zoom: 90%;
+    zoom: 80%;
   }
   
   /* Control the right side */
   .right {
     right: 0;
     width: 50%;
-    zoom: 90%;
+    zoom: 80%;
   }
   
   /* If you want the content centered horizontally and vertically */
