@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    margin: 0;
+  }
+  
+  .dropdowns {
+    margin: 20px;
+  }
+  
+  select {
+    padding: 6px;
+    font-size: 14px;
+    margin: 0 10px;
+  }
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 20px;
+    /* justify-content: center; */
+    gap: 50px;
+  }
+  
+  .viz-container {
+    /* background-color: white; */
+    /* padding: 10px; */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+    
+
+  .viz-container-full {
+    width: 100%;
+    /* background-color: white; */
+    padding: 10px;
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  .tooltip {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.85);
+    color: white;
+    padding: 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    pointer-events: none;
+    display: none;
+  }
+  

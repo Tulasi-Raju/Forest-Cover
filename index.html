@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tree Cover Change Dashboard</title>
+  <script src="https://d3js.org/d3.v6.min.js"></script>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/split.css" />
+
+</head>
+<body>
+  <h2>Forest Cover Change Dashboard (2010–2020)</h2>
+
+  <!-- <div class="dropdowns">
+    <label for="countrySelect">Select Country:</label>
+    <select id="countrySelect"></select>
+
+    <label for="stateSelect">Select State/Region:</label>
+    <select id="stateSelect"></select>
+  </div> -->
+  <div class = "split left">
+    <div class="dropdowns">
+        <label for="countrySelect">Select Country:</label>
+        <select id="countrySelect"></select>
+    </div>
+  <div class="container">
+    <div class="viz-container centered">
+      <h3>Initial Area vs Total Loss</h3>
+      <svg id="scatterplot" width="700" height="350"></svg>
+
+      <h3>Forest Gain by State</h3>
+      <svg id="barchart" width="800" height="350"></svg>
+    </div>
+
+  </div>
+  </div>
+
+  <div class = "split right">
+    <div class="dropdowns">
+    <label for="stateSelect">Select State/Region:</label>
+    <select id="stateSelect"></select>
+    </div>
+  <div class="container">
+  <div class="viz-container">
+    <h3>Tree Cover Loss (2010–2020)</h3>
+    <svg id="linechart" width="800" height="350"></svg>
+  </div>
+  <div class="viz-container">
+    <h3>Tree Cover Loss Breakdown</h3>
+    <svg id="piechart" width="400" height="300"></svg>
+
+  </div>
+</div>
+</div>
+  <!-- <div id="tooltip" class="tooltip">
+
+  </div> -->
+  <div id="tooltip" 
+     style="position: absolute; 
+            background: rgba(0, 0, 0, 0.8); 
+            color: white; 
+            padding: 10px; 
+            border-radius: 5px; 
+            font-size: 12px; 
+            pointer-events: none; 
+            opacity: 0; 
+            z-index: 2000;
+            transition: opacity 0.2s ease-in-out;">
+   </div>
+
+  <script src="js/visuals.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
